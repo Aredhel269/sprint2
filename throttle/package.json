@@ -1,0 +1,25 @@
+{
+  "name": "throttle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --colors",
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/sinon": "^17.0.2",
+    "jest": "^29.7.0",
+    "jest-summary-reporter": "^0.0.2",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
+  }
+}
