@@ -20,13 +20,4 @@ export function debounce<T extends any[]>(
             callback(...args);
         }, wait)
     }
-
 }
-
-
-
-
-
-
-
-
