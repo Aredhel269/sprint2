@@ -5,14 +5,14 @@ const throttle = (callback, timeFrame) => {
     let lastTime = null;
     return (...args) => {
         const now = new Date().getTime();
-        console.log(`Crida a throttle. Hora actual: ${now}, lastTime: ${lastTime}`);
+        console.debug(`Crida a throttle`);
         if (!lastTime || now - lastTime >= timeFrame) {
-            console.log("Executant la funció original...");
+            console.debug("Executant la funnció...");
             callback(...args);
             lastTime = now;
         }
         else {
-            console.log("Ignorant la crida, no ha passat prou temps.");
+            console.debug("Ignorant la crida, no ha passat prou temps.");
         }
     };
 };
